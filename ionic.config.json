@@ -1,0 +1,7 @@
+{
+  "name": "flappyNghia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
