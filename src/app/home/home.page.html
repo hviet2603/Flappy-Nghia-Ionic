@@ -1,20 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Flappy Nghia
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <h1><i>Wähle deinen Nghia aus</i></h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <a routerLink="/game" [queryParams]="{fig: 1}">
+            <img src="../../assets/images/square-nghia1.jpg" />
+          </a>
+        </ion-col>
+
+        <ion-col size="12">
+          <a routerLink="/game" [queryParams]="{fig: 2}">
+            <img src="../../assets/images/square-nghia2.jpg" />
+          </a>
+        </ion-col>
+
+        <ion-col size="12">
+          <a routerLink="/game" [queryParams]="{fig: 3}">
+            <img src="../../assets/images/square-nghia3.jpg" />
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
